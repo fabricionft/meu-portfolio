@@ -243,7 +243,10 @@ body{
 
 .icon-links-sobre-1{height: 13px;}
 
-.links-sobre:hover{text-decoration: underline;}
+.links-sobre:hover{
+    color: rgb(123, 187, 255);
+    text-decoration: underline;
+}
 
 /*Projetos*/
 .conteudo-projetos{
