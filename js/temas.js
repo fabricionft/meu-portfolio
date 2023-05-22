@@ -12,7 +12,6 @@ function carregarTema(){
         $('#circulo').addClass('ativo');
         $('#circulo').css('transform', "translateX(23.5px)");
 
-        //icons sobre
         $('#youtubeSobre').attr('src', "img/dark-theme/youtube.png");
         $('#linkedinSobre').attr('src', "img/dark-theme/linkedin.png");
         $('#githubSobre').attr('src', "img/dark-theme/github.png");
@@ -27,7 +26,6 @@ function carregarTema(){
         $('#circulo').removeClass('ativo');
         $('#circulo').css('transform', "translateX(0px)");
 
-        //icons sobre
         $('#youtubeSobre').attr('src', "img/light-theme/youtube.png");
         $('#linkedinSobre').attr('src', "img/light-theme/linkedin.png");
         $('#githubSobre').attr('src', "img/light-theme/github.png");
