@@ -1,0 +1,126 @@
+.tituloCabecalho, .tituloCabecalho1{
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+
+.tituloCabecalho1{justify-content: center;}
+
+/*Projetos*/
+.containerProjetos{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 75px;
+}
+
+.projeto{
+  width: 23.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--elementos);
+  box-shadow: 0 2px 4px var(--sombra), 0 8px 16px var(--sombra);
+  margin-left: 2%;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.projeto:nth-child(4n + 2){
+  margin-left: 0;
+}
+
+
+.margemProjeto{
+  width: 85%;
+  margin: 25px 0;
+}
+
+.divisaoDetalhes, .divisaoBotoes{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.divisaoBotoes{
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subtituloDetalhesProjeto{
+  font-weight: bold;
+  color: var(--principal);
+  margin-bottom: 2.5px;
+}
+
+.textoDetalhesProjeto{
+  margin-bottom: 15px;
+}
+
+.itemDetalhesProjeto{
+  margin: 0;
+}
+
+.btnProjeto{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--principal);
+  border: 5px solid var(--principal-escuro);
+  color: var(--elementos);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px 5px 0px 5px;
+}
+
+.btnProjeto:hover{
+  background: var(--principal-escuro);
+}
+
+.iconProjeto{
+  width: 20px;
+}
+
+
+@media screen and (max-width: 1000px){
+  .projeto{
+      width: 32%;
+  }
+
+  .projeto:nth-child(3n + 2){
+      margin-left: 0;
+  }
+
+  .projeto:nth-child(6n){
+      margin-left: 2%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  
+  .containerProjetos{justify-content: space-between;}
+
+  .projeto, .projeto:nth-child(3n + 2), .projeto:nth-child(6n){
+    margin: 0 0 30px 0;
+    width: 48%;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .projeto, .projeto:nth-child(3n + 2), .projeto:nth-child(6n){
+      width: 1000%;
+  }
+}

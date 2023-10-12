@@ -1,0 +1,16 @@
+.tituloSessao{
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+
+.variacao{justify-content: center;}
+
+@media screen and (max-width: 500px){
+  .variacao{justify-content: left;}
+}

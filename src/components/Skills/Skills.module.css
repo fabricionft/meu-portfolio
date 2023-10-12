@@ -1,0 +1,61 @@
+.tituloCabecalho, .tituloCabecalho1{
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
+
+.tituloCabecalho1{justify-content: center;}
+
+
+/*Skils*/
+.containerSkills{
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.divisaoSoftSkils, .divisaoHardSkils{
+  background: var(--elementos);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--sombra), 0 8px 16px var(--sombra);
+  position: relative;
+  margin: 0px 15px;
+}
+
+.margemConteudoSkills{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+@media screen and (max-width: 800px){
+  
+  .containerSkills{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  
+  .containerSkills{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .divisaoSoftSkils, .divisaoHardSkils{width: 100%; margin: 0;}
+  .divisaoSoftSkils{margin-bottom: 60px;}
+
+  .margemConteudoSkills{
+    width: 90%;
+    justify-content: left;
+  }
+}
