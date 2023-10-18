@@ -8,50 +8,48 @@
 
 .iconContatos{
   width: 27.5px;
-  margin: 6px;
 }
 
 .bordaPulsar{
   width: 50px;
   height: 50px;
-  margin: 0 7.5px;
+  margin: 0 5px;
   background: var(--principal);
   border-radius: 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: flutuar 4s infinite alternate;
+  box-shadow: 0 2px 4px var(--principal-escuro), 0 8px 16px var(--principal-escuro);
 }
 
-.bordaPulsar::before, .bordaPulsar::after{
-  content: '';
-  display: block;
-  position: absolute;
-  border: 2.5px solid var(--principal);
-  top: -10px;
-  bottom: -10px;
-  left: -10px;
-  right: -10px;
-  border-radius: 10px;
-  animation: pulsar 2s infinite ease-in-out;
-  border-radius: 50%;
+.bordaPulsar:nth-child(2n){
+  animation: flutuarAoContrario 4s infinite alternate;
 }
 
-@keyframes pulsar{
-  0%{
-      transform: scale(0.5);
-      opacity: 0;
+.bordaPulsar:hover{
+  filter: brightness(80%);
+}
+
+@keyframes flutuar{
+  from{
+    transform: translate3d(0, 4px, 0);
   }
 
-  50%{
-      opacity: 1;
+  to{
+      transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes flutuarAoContrario{
+  from{
+    transform: translate3d(0, -4px, 0);
   }
 
-  100%{
-      transform: scale(1);
-      opacity: 0;
+  to{
+      transform: translate3d(0, 4px, 0);
   }
-  
 }
 
 

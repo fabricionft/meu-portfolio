@@ -41,6 +41,7 @@ export default function Skills(){
               <li><p>Spring Boot (Java)</p></li>
               <li><p>Spring Security</p></li>
               <li><p>Spring Data</p></li>
+              <li><p>React (Javascript)</p></li>
               <li><p>Javascript + JQuery</p></li>
               <li><p>HTML + CSS</p></li>
               <li><p>MySQL</p></li>

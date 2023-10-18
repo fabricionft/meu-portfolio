@@ -20,7 +20,7 @@ export default function Apresentacao(){
         <p className={styles.textoApresentacao}>informações, projetos e contatos</p>
       </div>
 
-      <p className={styles.dicaSeletorTema}>Clique para mudar o tema</p>
+    
       <div className={styles.seletorTema}
         onClick={alterarTema}
       >

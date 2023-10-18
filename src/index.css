@@ -1,3 +1,9 @@
+@font-face {
+  font-family: ZonaPro;
+  src: url(../src//assets/fonts/ZonaPro-Bold.otf);
+}
+
+
 body{
   margin: 0;
   padding: 0;
@@ -11,6 +17,10 @@ p, h1, h2, a{
   margin: 0;
 }
 
+h1{
+  color: var(--titulo);
+}
+
 a:hover{
   color: var(--textos);
 }
@@ -20,90 +30,32 @@ ul{
   padding-left: 15px;
 }
 
-li{color: #cba0ff;}
+li{color: var(--principal)}
 
 :root{
-  --fundo: rgb(251, 249, 255);
-  --elementos: #ffffff;
   --principal: rgb(136, 118, 255);
   --principal-escuro: rgb(103, 89, 193);
-  --degrade: rgb(123, 250, 212);
-  --titulo: #000;
-  --textos: rgb(158, 158, 158);
-  --sombra: rgba(0, 0, 0, 0.075);
 }
+
 
 .temaClaro:root{
   --fundo: rgb(251, 249, 255);
   --elementos: #ffffff;
-  --principal: rgb(136, 118, 255);
-  --principal-escuro: rgb(103, 89, 193);
-  --degrade: rgb(123, 250, 212);
-  --titulo: #000;
-  --textos: rgb(158, 158, 158);
-  --sombra: rgba(0, 0, 0, 0.075);
-}
+  --titulo: #2d2d2d;
+  --textos: rgb(141, 141, 141);
+  --sombra: #00000013;
+  --circulo: rgb(234, 230, 255);
+  --a: rgb(136, 118, 255);
+  --b: #fff
+;}
 
 .temaEscuro:root{
   --fundo: rgb(33, 33, 33);
-  --elementos: rgb(50, 50, 50);
-  --principal: #bf8dfc;
-  --principal-escuro: rgb(132, 119, 214);
-  --degrade: #bf8dfc;
+  --elementos: rgb(53, 53, 53);
   --titulo: #fff;
-  --textos: #fff;
-  --sombra: rgba(209, 129, 255, 0.075);
-}
-
-
-
-@keyframes pulsar{
-  0%{
-      transform: scale(0.5);
-      opacity: 0;
-  }
-
-  50%{
-      opacity: 1;
-  }
-
-  100%{
-      transform: scale(1);
-      opacity: 0;
-  }
-  
-}
-
-@keyframes mudarDeCor{
-  from{
-      filter: brightness(100%);
-  }
-
-  to{
-      filter: brightness(130%);
-  }
-}
-
-@keyframes flutuar{
-  from{
-      transform: translate3d(0, 0, 0);
-  }
-
-  to{
-      transform: translate3d(0, -10px, 0);
-  }
-}
-
-@keyframes escrever{
-  from{
-      width: 0;
-  }
-}
-
-@keyframes piscar{
-  0%{color: var(--textos)}
-
-  50%{
-      border: transparent;
-  }
+  --textos: #efefef;
+  --sombra: rgb(136, 118, 255, 0.15);
+  --circulo: rgb(136, 118, 255);
+  --a: #fff;
+  --b: rgb(136, 118, 255);
 }
